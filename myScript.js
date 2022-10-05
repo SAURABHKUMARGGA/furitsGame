@@ -64,7 +64,7 @@ $(function(){
        },600)
     })
     //for mobile touch
-    $('#fruit').touchstart(()=>{
+    $('#fruit').on('touchstart',()=>{
         score++;
         $('#fruit').hide('explode',500);
         $('#score').html(score);
