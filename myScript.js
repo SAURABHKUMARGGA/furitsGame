@@ -63,6 +63,18 @@ $(function(){
 
        },600)
     })
+    //for mobile touch
+    $('#fruit').touchstart(()=>{
+        score++;
+        $('#fruit').hide('explode',500);
+        $('#score').html(score);
+        clearInterval(downfruit);
+       setTimeout(()=>{
+           addfruits();
+           runfruit();
+
+       },600)
+    })
 
     //create custome function
     function addhearts(){
