@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
     <title>&#128151;&#128151;&#128151; Fruits Game &#128151;&#128151;&#128151;</title>
 </head>
-<body oncontextmenu="return false">
+<body >
     <!-- <img src="./image/apple.svg" alt="fruits" id="fruit"> -->
   <div class="container">
         <div id="gameover">
@@ -19,7 +19,7 @@
         <div class="fruitsContianer" id="fruitsdiv">
                     <div  id="fh2">
                         <h2 style="top: 100px;z-index:3;position: relative;">You are ready to play start the game...</h2>
-                        <img style="margin-top:-50px;" src="image/progress.gif" alt="progress"/>
+                        <img style="margin-top:-50px;" id="loader" src="image/progress.gif" alt="progress"/>
 
                     </div>
             <img src="" alt="fruits" id="fruit">
@@ -30,6 +30,12 @@
         </div>
         <div id="tscorediv">Total Score : <span id="tscore">50</span></div>
   </div>
+
+  <audio id="audioelm">
+    <source src="./audio/a.mp3" />
+    <source src="./audio/b.ogg" />
+
+  </audio>
   <!-- script file -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>

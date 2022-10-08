@@ -19,6 +19,7 @@ $(function(){
     })
 
     $('#startBtn').click(function(){
+        // $('#audioelm')[0].play();
         //check user are playing or not
         $('#gameover').hide();
         $('#tscorediv').hide();
@@ -50,10 +51,12 @@ $(function(){
         }
     })
 
-
+    // console.log($('#audioelm')[0].play);
+    
     //fruits over
     $('#fruit').mouseover(()=>{
         score++;
+        $('#audioelm')[0].play();
         $('#fruit').hide('explode',500);
         $('#score').html(score);
         clearInterval(downfruit);
@@ -66,6 +69,7 @@ $(function(){
     //for mobile touch
     $('#fruit').on('touchstart',()=>{
         score++;
+        $('#audioelm')[0].play();
         $('#fruit').hide('explode',500);
         $('#score').html(score);
         clearInterval(downfruit);

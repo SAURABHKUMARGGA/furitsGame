@@ -110,3 +110,26 @@ body{
 #fruit{
     display:none;
 }
+
+@media (max-width: 480px) {
+    #fruit{
+        height: 100px;
+        width: 100px;
+    }
+    #tscorediv{
+        position: absolute;
+        right: 15px;
+        top:-30px;
+        z-index: 6;
+        color:red !important;
+        font-size: 30px;
+        color: #ffffff;
+        display: none;
+    }
+    #loader{
+        width: 320px;
+    position: absolute;
+    left: 0px;
+    top: 258px;
+    }
+}
